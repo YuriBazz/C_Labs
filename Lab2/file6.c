@@ -30,4 +30,5 @@ void main(){
         printf(", %d", array[i]);        
     }
     printf(", %d]\n", array[n-1]);
+    return;
 }
