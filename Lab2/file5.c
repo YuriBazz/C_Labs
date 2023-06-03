@@ -12,7 +12,7 @@ void main(){
     printf("Write a length of an array: ");
     int n,i,j;
     scanf("%d", &n);
-    int array[n-1];
+    int *array = (int*)malloc((n-1) * sizeof(int));;
     for (i=0;i<n;i++){
         printf("Write %d-th element: ", i);
         scanf("%d", &array[i]);
@@ -23,6 +23,7 @@ void main(){
             printf("[%d, %d]\n", array[j], array[i]);
         }
     }
+    free(array);
     return;
 }
 

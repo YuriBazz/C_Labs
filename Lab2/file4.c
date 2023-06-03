@@ -14,7 +14,7 @@ void main(){
         b/=10;
     }
     b = a;
-    int array[i]; 
+    int *array = (int*)malloc(i * sizeof(int));; 
     for (k=i; k>=0; k--){
         array[k] = a%10;
         a/=10;
@@ -37,6 +37,6 @@ void main(){
             printf("^%d", i - k);
         }
     }
-    
+    free(array);
     return;
 }
