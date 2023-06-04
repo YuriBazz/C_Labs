@@ -7,14 +7,14 @@ void main(){
     printf("Write an length of the first array: ");
     int n,m,i,j,k;
     scanf("%d", &n);
-    int *array_1 = (int*)malloc((n-1) * sizeof(int));
+    int *array_1 = (int*)malloc((n) * sizeof(int));
     for (i=0;i<n;i++){
         printf("Write %d-th element: ", i);
         scanf("%d", &array_1[i]);
     }
     printf("Write an length of the second array: ");
     scanf("%d", &m);
-    int *array_2 = (int*)malloc((m-1) * sizeof(int));
+    int *array_2 = (int*)malloc((m) * sizeof(int));
     for (i=0;i<m;i++){
         printf("Write %d-th element: ", i);
         scanf("%d", &array_2[i]);
